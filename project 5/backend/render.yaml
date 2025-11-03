@@ -3,6 +3,7 @@ services:
     name: doctor-appointment-backend
     env: python
     plan: free
+    pythonVersion: 3.11        # 👈 add this line
     buildCommand: |
       pip install --upgrade pip wheel setuptools
       pip install -r requirements.txt --only-binary=:all:
